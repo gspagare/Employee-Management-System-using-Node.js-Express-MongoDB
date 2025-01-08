@@ -34,10 +34,10 @@ This project is a backend application built with **Node.js**, **Express.js**, an
 - A `.env` file with the following environment variables:
 
 PORT=3000 
-DB_HOST=<your-database-host> 
-DB_USERNAME=<your-username> 
-DB_PASS=<your-password> 
-DB_ENDPOINT=<your-database-endpoint>
+DB_HOST=`<your-database-host>`
+DB_USERNAME=`<your-username>`
+DB_PASS=`<your-password>`
+DB_ENDPOINT=`<your-database-endpoint`
 
 
 ### Steps to Run Locally
