@@ -37,8 +37,35 @@ PORT=3000
 DB_HOST=`<your-database-host>`
 DB_USERNAME=`<your-username>`
 DB_PASS=`<your-password>`
-DB_ENDPOINT=`<your-database-endpoint`
+DB_ENDPOINT=`<your-database-endpoint>`
 
+---
+
+### Steps to Set Up MongoDB on Atlas
+1. **Create a MongoDB Atlas Account:**
+   - Visit [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and sign up for a free account.
+
+2. **Create a Cluster:**
+   - Log in to MongoDB Atlas and create a new cluster.
+   - Choose a cloud provider and region for your cluster.
+
+3. **Set Up Database Access:**
+   - Go to the "Database Access" tab and add a new database user.
+   - Assign a username and password to the user and select appropriate access privileges.
+
+4. **Network Access Configuration:**
+   - Go to the "Network Access" tab and allow access from your IP address or enable access from anywhere (`0.0.0.0/0`) for testing purposes.
+
+5. **Create a Database:**
+   - Click "Browse Collections" and create a new database. Name it `employee-management` or use a preferred name.
+   - Create a collection inside the database for employees (e.g., `employees`).
+
+6. **Obtain Connection URI:**
+   - Go to the "Clusters" tab, click "Connect," and select "Connect Your Application."
+   - Copy the connection string (e.g., `mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority`).
+   - Replace `<username>`, `<password>`, and `<dbname>` with your database credentials and name.
+
+---
 
 ### Steps to Run Locally
 1. Clone the repository:
